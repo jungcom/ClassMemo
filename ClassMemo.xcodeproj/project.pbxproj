@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4E7819BB215E9E8C00B2BDEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7819BA215E9E8C00B2BDEB /* AppDelegate.swift */; };
-		4E7819BD215E9E8C00B2BDEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7819BC215E9E8C00B2BDEB /* ViewController.swift */; };
 		4E7819C0215E9E8C00B2BDEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7819BE215E9E8C00B2BDEB /* Main.storyboard */; };
 		4E7819C3215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E7819C1215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld */; };
 		4E7819C5215E9E8D00B2BDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7819C4215E9E8D00B2BDEB /* Assets.xcassets */; };
 		4E7819C8215E9E8D00B2BDEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7819C6215E9E8D00B2BDEB /* LaunchScreen.storyboard */; };
+		4EE7BFE32162B8EE00DB2354 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7BFE22162B8EE00DB2354 /* RootPageViewController.swift */; };
+		4EE7BFE52162BD3F00DB2354 /* WeekdayScehduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7BFE42162BD3F00DB2354 /* WeekdayScehduleViewController.swift */; };
+		4EE7BFE72162C12600DB2354 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7BFE62162C12600DB2354 /* PersistenceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E7819B7215E9E8C00B2BDEB /* ClassMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7819BA215E9E8C00B2BDEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E7819BC215E9E8C00B2BDEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E7819BF215E9E8C00B2BDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E7819C2215E9E8C00B2BDEB /* ClassMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassMemo.xcdatamodel; sourceTree = "<group>"; };
 		4E7819C4215E9E8D00B2BDEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E7819C7215E9E8D00B2BDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E7819C9215E9E8D00B2BDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE7BFE22162B8EE00DB2354 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		4EE7BFE42162BD3F00DB2354 /* WeekdayScehduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayScehduleViewController.swift; sourceTree = "<group>"; };
+		4EE7BFE62162C12600DB2354 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E39E567216472B4007938B3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EE7BFE42162BD3F00DB2354 /* WeekdayScehduleViewController.swift */,
+				4EE7BFE22162B8EE00DB2354 /* RootPageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4E39E568216472CB007938B3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4EE7BFE62162C12600DB2354 /* PersistenceService.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4E39E569216472E5007938B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E7819BE215E9E8C00B2BDEB /* Main.storyboard */,
+				4E7819C6215E9E8D00B2BDEB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E39E56A21647301007938B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E7819C1215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4E7819AE215E9E8C00B2BDEB = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +94,13 @@
 		4E7819B9215E9E8C00B2BDEB /* ClassMemo */ = {
 			isa = PBXGroup;
 			children = (
-				4E7819BA215E9E8C00B2BDEB /* AppDelegate.swift */,
-				4E7819BC215E9E8C00B2BDEB /* ViewController.swift */,
-				4E7819BE215E9E8C00B2BDEB /* Main.storyboard */,
-				4E7819C4215E9E8D00B2BDEB /* Assets.xcassets */,
-				4E7819C6215E9E8D00B2BDEB /* LaunchScreen.storyboard */,
 				4E7819C9215E9E8D00B2BDEB /* Info.plist */,
-				4E7819C1215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld */,
+				4E7819BA215E9E8C00B2BDEB /* AppDelegate.swift */,
+				4E7819C4215E9E8D00B2BDEB /* Assets.xcassets */,
+				4E39E56A21647301007938B3 /* Model */,
+				4E39E569216472E5007938B3 /* View */,
+				4E39E567216472B4007938B3 /* ViewControllers */,
+				4E39E568216472CB007938B3 /* Support */,
 			);
 			path = ClassMemo;
 			sourceTree = "<group>";
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7819BD215E9E8C00B2BDEB /* ViewController.swift in Sources */,
+				4EE7BFE72162C12600DB2354 /* PersistenceService.swift in Sources */,
+				4EE7BFE52162BD3F00DB2354 /* WeekdayScehduleViewController.swift in Sources */,
+				4EE7BFE32162B8EE00DB2354 /* RootPageViewController.swift in Sources */,
 				4E7819BB215E9E8C00B2BDEB /* AppDelegate.swift in Sources */,
 				4E7819C3215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld in Sources */,
 			);
