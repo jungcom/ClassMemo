@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E39E57521647E85007938B3 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E39E57421647E85007938B3 /* ClassTableViewCell.swift */; };
 		4E7819BB215E9E8C00B2BDEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7819BA215E9E8C00B2BDEB /* AppDelegate.swift */; };
 		4E7819C0215E9E8C00B2BDEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7819BE215E9E8C00B2BDEB /* Main.storyboard */; };
 		4E7819C3215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E7819C1215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E39E57421647E85007938B3 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
 		4E7819B7215E9E8C00B2BDEB /* ClassMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7819BA215E9E8C00B2BDEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E7819BF215E9E8C00B2BDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4E39E57321647E4D007938B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E39E57421647E85007938B3 /* ClassTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		4E7819AE215E9E8C00B2BDEB = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				4E39E56A21647301007938B3 /* Model */,
 				4E39E569216472E5007938B3 /* View */,
 				4E39E567216472B4007938B3 /* ViewControllers */,
+				4E39E57321647E4D007938B3 /* Cells */,
 				4E39E568216472CB007938B3 /* Support */,
 			);
 			path = ClassMemo;
@@ -178,6 +189,7 @@
 			files = (
 				4EE7BFE72162C12600DB2354 /* PersistenceService.swift in Sources */,
 				4EE7BFE52162BD3F00DB2354 /* WeekdayScehduleViewController.swift in Sources */,
+				4E39E57521647E85007938B3 /* ClassTableViewCell.swift in Sources */,
 				4EE7BFE32162B8EE00DB2354 /* RootPageViewController.swift in Sources */,
 				4E7819BB215E9E8C00B2BDEB /* AppDelegate.swift in Sources */,
 				4E7819C3215E9E8C00B2BDEB /* ClassMemo.xcdatamodeld in Sources */,

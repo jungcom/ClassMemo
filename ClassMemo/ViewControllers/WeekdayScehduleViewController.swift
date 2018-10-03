@@ -17,8 +17,8 @@ class WeekdayScehduleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchClasses()
+        setupTableView()
     }
     
     @IBAction func addClass(){
@@ -56,6 +56,7 @@ class WeekdayScehduleViewController: UIViewController {
     }
     */
     
+    // MARK: - Fetch Classes from Core Data Stack
     private func fetchClasses(){
         let fetchRequest : NSFetchRequest<Classes> = Classes.fetchRequest()
         do{
@@ -78,10 +79,16 @@ extension WeekdayScehduleViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ClassTableViewCell", for: indexPath) as! ClassTableViewCell
         
         //Get values from the classes array
         cell.textLabel?.text = classes[indexPath.row].name
+        cell.classImageView?.layer.cornerRadius = 50
         return cell
+    }
+    
+    //Setup tableView
+    func setupTableView(){
+        self.tableView.rowHeight = 200
     }
 }

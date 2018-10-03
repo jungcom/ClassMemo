@@ -85,6 +85,31 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bKy-Yt-gXT">
                                 <rect key="frame" x="0.0" y="62" width="375" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassTableViewCell" rowHeight="164" id="bbw-1o-lLR" customClass="ClassTableViewCell" customModule="ClassMemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="164"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bbw-1o-lLR" id="CIH-US-dq9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="163.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClassBackground" translatesAutoresizingMaskIntoConstraints="NO" id="16d-X6-KN8">
+                                                    <rect key="frame" x="15" y="11" width="345" height="141.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="16d-X6-KN8" firstAttribute="top" secondItem="CIH-US-dq9" secondAttribute="top" constant="11" id="Gaw-jt-kwo"/>
+                                                <constraint firstAttribute="bottom" secondItem="16d-X6-KN8" secondAttribute="bottom" constant="11" id="Zht-k3-jeR"/>
+                                                <constraint firstAttribute="trailing" secondItem="16d-X6-KN8" secondAttribute="trailing" constant="15" id="gTv-Ap-693"/>
+                                                <constraint firstItem="16d-X6-KN8" firstAttribute="leading" secondItem="CIH-US-dq9" secondAttribute="leading" constant="15" id="u2D-NF-Sct"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.78202203600946385" blue="0.46706426573754523" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="classImageView" destination="16d-X6-KN8" id="HFg-26-F3U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="xap-q0-cEB" id="Eck-Cr-WQN"/>
                                     <outlet property="delegate" destination="xap-q0-cEB" id="che-iq-vDb"/>
@@ -117,7 +142,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awe-oU-f6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="507"/>
+            <point key="canvasLocation" x="2092" y="506.89655172413796"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ClassBackground" width="1416" height="1416"/>
+    </resources>
 </document>
